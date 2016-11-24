@@ -48,7 +48,7 @@ public class KruskalFinal {
     
       int m=6;  //no of edges
       int n=6;   //no of vertex
-      PriorityQueue<edge> heap = new PriorityQueue<edge>(n, new Comparator<edge>() {
+      PriorityQueue<edge> heap = new PriorityQueue<edge>(m, new Comparator<edge>() {
 	        public int compare(edge u, edge v) {
 	            if( u.weight == v.weight ) return 0;
 	            else if(u.weight > v.weight) return 1;
